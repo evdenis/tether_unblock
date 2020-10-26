@@ -14,9 +14,7 @@ Stable release:
 Master branch:
 1. git clone https://github.com/evdenis/tether_unblock
 2. cd tether_unblock
-3. git archive --output tether_unblock.zip HEAD
-4. adb push tether_unblock.zip /sdcard/
-5. MagiskManager -> Modules + tether_unblock.zip -> Reboot
+3. make install
 
 ## Support
 
