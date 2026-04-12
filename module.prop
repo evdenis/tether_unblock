@@ -1,6 +1,6 @@
 id=tether_unblock
 name=Tether Unblock
-version=v2.1
+version=v2.1-add-ifs
 versionCode=3
 author=Denis Efremov (@evdenis)
 description=Allows bypassing tethering blocking by mobile operators.

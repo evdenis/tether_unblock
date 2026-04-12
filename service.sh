@@ -22,7 +22,7 @@ HAS_IP6TABLES=false
 [ -x "$(command -v iptables)" ] && HAS_IPTABLES=true
 [ -x "$(command -v ip6tables)" ] && HAS_IP6TABLES=true
 
-for IFACE in rndis0 wlan0 wlan1 ap0 bt-pan; do
+for IFACE in rndis0 wlan0 wlan1 wlan2 wlan3 ncm0 ncm1 ncm2 ncm3 ap0 bt-pan; do
 	if $HAS_IPTABLES; then
 		iptables  -t mangle -A PREROUTING  -i "$IFACE" -j TTL --ttl-inc 1
 		iptables  -t mangle -I POSTROUTING -o "$IFACE" -j TTL --ttl-inc 1
